@@ -1,0 +1,29 @@
+.tabContent {
+    display: none;
+}
+.tabSelect {
+    cursor: pointer;
+    outline: none;
+    border: none;
+    transition: 0.3s;
+    
+}
+.tabSelect:hover{
+    background-color: blueviolet;
+}
+.tabSelect.active {
+    background-color: lightsalmon;
+}
+.blueprint, .printProvider, .shop{
+    cursor: pointer;
+}
+.blueprint:hover, .printProvider:hover, .shop:hover {
+    background-color: blueviolet;
+}
+.blueprint.selected, .printProvider.selected, .shop.selected {
+    background-color:blueviolet;
+}
+
+img {
+    width: 150px;
+}

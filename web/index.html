@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>POD Studio</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">POD Studio</div>
+    <nav id="nav">
+      <a href="#design" data-view="design"><span class="step">1</span> Design</a>
+      <a href="#products" data-view="products"><span class="step">2</span> Products <span id="cartCount" class="badge" hidden></span></a>
+      <a href="#details" data-view="details"><span class="step">3</span> Details &amp; generate</a>
+      <span class="nav-sep"></span>
+      <a href="#catalog" data-view="catalog">Catalog &amp; prices</a>
+      <a href="#history" data-view="history">History</a>
+    </nav>
+    <div id="statusPill" class="pill">…</div>
+  </header>
+  <main id="view"></main>
+  <div id="toast" class="toast" hidden></div>
+  <script type="module" src="/js/app.js"></script>
+</body>
+</html>

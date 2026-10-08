@@ -1,0 +1,24 @@
+{
+  "name": "pod-studio",
+  "version": "2.0.0",
+  "description": "Design composer + print-on-demand product creator (Printify first, other platforms later)",
+  "private": true,
+  "type": "module",
+  "main": "server/index.js",
+  "scripts": {
+    "start": "node server/index.js",
+    "dev": "node --watch server/index.js",
+    "migrate": "node server/db/migrate.js",
+    "test": "node --test test/*.test.js"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "dotenv": "^18.0.6",
+    "express": "^5.2.1",
+    "multer": "^2.4.0",
+    "pg": "^8.23.1",
+    "sharp": "^0.35.5"
+  }
+}

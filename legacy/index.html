@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="./style.css"/>
+</head>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fabric.js/5.3.0/fabric.min.js"></script>
+<script type="module" src="display.js"></script>
+<body>
+    <div id="menu" class="menu">
+        <button class="tabSelect" id="browse">Browse</button>
+        <button class="tabSelect" id="create">Create</button>
+    </div>
+    <div id="browse" class="tabContent">
+        <h3>Browse</h3>
+        <div id="infoBlueprints">
+            <button id="getBlueprintsButton">Get blueprints</button>
+        </div>
+        <div id="blueprintDetails"></div>
+        <div style="width:50%" id="printProviders"></div><div id="shippingCost" style="width: 50%"></div>
+        <div>
+            <div id="variants"></div>
+            <div id="variantDetails"></div>
+            <div id="shipping"></div>
+            <div id="shops"></div>
+            <button id="createProduct">Create product</button>
+            <button id="testProduct">Create Test product</button>
+            <div id="images"></div>
+        </div>
+        <div id="selectProducts"></div>
+    </div>
+    <div id="create" class="tabContent">
+        <h3>Create</h3>
+        <div id="importImage">
+            <title for="importBackgroundLink">Background</title><input type="file" id="importBackgroundLink" value="C:\Users\antoi\Documents\printify\app\Version 1\d00001v001_bg.png"/><button id="BGSubmit">Import</button>
+            <div id="displayBG"></div>
+            <title for="importForegroundLink">Foreground</title><input type="file" id="importForegroundLink" value="C:\Users\antoi\Documents\printify\app\Version 1\coffee - Edited.png"/><button id="FGSubmit">Import</button>
+            <div id="displayFG"></div>
+            <title for="textArea">Add Text</title><input type="text" id="textArea">
+            <title for="width">Desired width</title><input id="width" type="text" value=300>
+            <title for="height">Desired width</title><input id="height" type="text" value=300>
+        </div>
+        <div id="genImage">
+            <button id="genButton">Generate</button>
+        </div>
+        <div id="test"><canvas style="border: 1px solid black" id="testCanvas" width="300px" height="300px"></canvas></div>
+        <div id="displayResult"></div>
+    </div>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fabric.js/5.3.0/fabric.min.js"></script>
+<script type="module" src="imaging.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script type="module" src="index.js"></script>
+
